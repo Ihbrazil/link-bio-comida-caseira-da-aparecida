@@ -141,29 +141,25 @@
   
   /* -----------estilo media queries--------------- */
 
-@media(max-width: 540px)
-{
-  .secao-banner video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill;
+  @media(max-width: 540px)
+  {
+    .secao-banner video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: none;
+    }
+  
+    .container-info {
+      gap: 100px;
+      margin-bottom: 100px;
+    }
+  
+    .imgPerfil-titulo {
+      margin-bottom: 25px;
+    }
+  
+   /* Estilo da imagem de perfil e do titulo */
+    .imgPerfil-titulo h1 {
+      display: none;
+    }
   }
-
-  .container-info {
-    gap: 100px;
-    margin-bottom: 100px;
-  }
-
-  .imgPerfil-titulo {
-    margin-bottom: 230px;
-    gap: 400px;
-  }
-
- /* Estilo da imagem de perfil e do titulo */
- .imgPerfil {
-    display: none;
-  }
-  .imgPerfil-titulo h1 {
-    display: none;
-  }
-}

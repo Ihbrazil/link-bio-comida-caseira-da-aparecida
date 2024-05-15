@@ -1,0 +1,166 @@
+/* Estilo Global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+  
+  .secao-banner {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .secao-banner video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .container-info {
+    width: 768px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  
+  /* Estilo da imagem de perfil e do titulo */
+  .imgPerfil-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .imgPerfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  
+    background-image: url('./assets/Comida_caseira.png');
+    background-position: center;
+    background-size: cover;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgPerfil::before {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    z-index: -1;
+    border-radius: 100%;
+  }
+  
+  .imgPerfil-titulo h1 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 6px 3px #000000;
+  }
+  
+  h1::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    bottom: 2px;
+    left: 5px;
+    border-radius: 4px;
+  }
+  
+  .imgPerfil-titulo h1::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: -20px;
+    background-image: url(./assets/verificado.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  /* Estilo dos links */
+  .arvore-links {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .arvore-links a {
+    width: 100%;
+    padding: 10px;
+  
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+  
+    border-radius: 20px;
+    background-color: #0200006e;
+    color: #fff;
+  }
+  
+  .arvore-links a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .arvore-links a p {
+    width: 90%;
+  }
+  
+  .arvore-links a img {
+    width: 30px;
+  }
+  
+  
+  /* -----------estilo media queries--------------- */
+
+@media(max-width: 540px)
+{
+  .secao-banner video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+  }
+
+  .container-info {
+    gap: 100px;
+    margin-bottom: 100px;
+  }
+
+  .imgPerfil-titulo {
+    margin-bottom: 230px;
+    gap: 400px;
+  }
+
+ /* Estilo da imagem de perfil e do titulo */
+  .imgPerfil-titulo h1 {
+    display: none;
+  }
+}

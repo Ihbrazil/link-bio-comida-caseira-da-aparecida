@@ -160,6 +160,9 @@
   }
 
  /* Estilo da imagem de perfil e do titulo */
+ .imgPerfil {
+    display: none;
+  }
   .imgPerfil-titulo h1 {
     display: none;
   }
